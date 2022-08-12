@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "1_sonar_sweep",
+  "shared/input_reader",
+]
