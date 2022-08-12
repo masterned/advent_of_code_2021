@@ -10,7 +10,7 @@ another swing at it, this time in Rust.
 
 ## TODO
 - [ ] 1: Sonar Sweep
-  - [ ] Part 1
+  - [x] Part 1
   - [ ] Part 2
 - [ ] 2: Dive!
   - [ ] Part 1
