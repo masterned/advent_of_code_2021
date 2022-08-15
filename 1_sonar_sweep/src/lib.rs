@@ -12,6 +12,15 @@ pub fn count_increases(depths: &Vec<i32>) -> i32 {
     count
 }
 
+pub fn count_window_mean_increases(depths: &[i32]) -> i32 {
+    let mean_depths: Vec<i32> = depths
+        .windows(3)
+        .map(|window| window.iter().sum())
+        .collect();
+
+    count_increases(&mean_depths)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

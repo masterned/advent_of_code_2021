@@ -9,9 +9,9 @@ so far, I've always dropped it somewhere in the middle. I'm going to take
 another swing at it, this time in Rust.
 
 ## TODO
-- [ ] 1: Sonar Sweep
+- [x] 1: Sonar Sweep
   - [x] Part 1
-  - [ ] Part 2
+  - [x] Part 2
 - [ ] 2: Dive!
   - [ ] Part 1
   - [ ] Part 2
