@@ -1,6 +1,8 @@
 [workspace]
+default-members = ["2_dive"]
 
 members = [
   "1_sonar_sweep",
+  "2_dive",
   "input_reader",
 ]

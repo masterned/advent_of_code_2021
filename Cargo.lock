@@ -3,6 +3,13 @@
 version = 3
 
 [[package]]
+name = "dive"
+version = "0.1.0"
+dependencies = [
+ "input_reader",
+]
+
+[[package]]
 name = "input_reader"
 version = "0.1.0"
 
