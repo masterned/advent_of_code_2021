@@ -12,9 +12,9 @@ another swing at it, this time in Rust.
 - [x] 1: Sonar Sweep
   - [x] Part 1
   - [x] Part 2
-- [ ] 2: Dive!
+- [x] 2: Dive!
   - [x] Part 1
-  - [ ] Part 2
+  - [x] Part 2
 - [ ] 3: Binary Diagnostic
   - [ ] Part 1
   - [ ] Part 2

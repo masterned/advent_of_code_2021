@@ -68,3 +68,26 @@ pub fn process_commands_basic(commands: &[Command]) -> i32 {
 
     x * y
 }
+
+pub fn process_aim_commands(commands: &[Command]) -> i32 {
+    let mut horizontal = 0;
+    let mut depth = 0;
+    let mut aim = 0;
+
+    for command in commands {
+        match command {
+            Command::Down(amount) => {
+                aim += amount;
+            },
+            Command::Up(amount) => {
+                aim -= amount;
+            },
+            Command::Forward(amount) => {
+                horizontal += amount;
+                depth += aim * amount;
+            }
+        }
+    }
+
+    horizontal * depth
+}

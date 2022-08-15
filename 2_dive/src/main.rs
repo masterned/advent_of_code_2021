@@ -1,6 +1,6 @@
 use std::io;
 
-use dive::{Command, process_commands_basic};
+use dive::{Command, process_commands_basic, process_aim_commands};
 use input_reader::read_lines;
 
 fn main() -> io::Result<()> {
@@ -11,6 +11,10 @@ fn main() -> io::Result<()> {
     let answer = process_commands_basic(&commands);
 
     println!("Part 1: {answer}");
+
+    let answer = process_aim_commands(&commands);
+
+    println!("Part 2: {answer}");
 
     Ok(())
 }
