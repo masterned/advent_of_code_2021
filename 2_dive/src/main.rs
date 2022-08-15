@@ -1,31 +1,16 @@
 use std::io;
 
-use dive::Command;
+use dive::{Command, process_commands_basic};
 use input_reader::read_lines;
 
 fn main() -> io::Result<()> {
     let lines = read_lines("2_dive/data/input.txt")?;
 
-    let mut x = 0;
-    let mut y = 0;
+    let commands: Vec<Command> = lines.iter().filter_map(|line| line.parse::<Command>().ok()).collect();
 
-    for line in lines {
-        if let Ok(command) = line.parse::<Command>() {
-            match command {
-                Command::Forward(amount) => {
-                    x += amount;
-                }
-                Command::Up(amount) => {
-                    y -= amount;
-                }
-                Command::Down(amount) => {
-                    y += amount;
-                }
-            }
-        }
-    }
+    let answer = process_commands_basic(&commands);
 
-    println!("Part 1: {}", x * y);
+    println!("Part 1: {answer}");
 
     Ok(())
 }

@@ -47,3 +47,24 @@ impl FromStr for Command {
         }
     }
 }
+
+pub fn process_commands_basic(commands: &[Command]) -> i32 {
+    let mut x = 0;
+    let mut y = 0;
+
+    for command in commands {
+        match command {
+            Command::Forward(amount) => {
+                x += amount;
+            }
+            Command::Up(amount) => {
+                y -= amount;
+            }
+            Command::Down(amount) => {
+                y += amount;
+            }
+        }
+    }
+
+    x * y
+}
