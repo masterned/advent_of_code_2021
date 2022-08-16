@@ -16,7 +16,7 @@ another swing at it, this time in Rust.
   - [x] Part 1
   - [x] Part 2
 - [ ] 3: Binary Diagnostic
-  - [ ] Part 1
+  - [x] Part 1
   - [ ] Part 2
 - [ ] 4: Giant Squid
   - [ ] Part 1
