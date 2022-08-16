@@ -78,10 +78,10 @@ pub fn process_aim_commands(commands: &[Command]) -> i32 {
         match command {
             Command::Down(amount) => {
                 aim += amount;
-            },
+            }
             Command::Up(amount) => {
                 aim -= amount;
-            },
+            }
             Command::Forward(amount) => {
                 horizontal += amount;
                 depth += aim * amount;
