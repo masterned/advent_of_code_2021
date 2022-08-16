@@ -1,8 +1,9 @@
 [workspace]
-default-members = ["2_dive"]
+default-members = ["3_binary_diagnostic"]
 
 members = [
   "1_sonar_sweep",
   "2_dive",
+  "3_binary_diagnostic",
   "input_reader",
 ]
