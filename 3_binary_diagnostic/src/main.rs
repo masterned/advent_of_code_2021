@@ -6,9 +6,14 @@ use input_reader::read_lines;
 fn main() -> io::Result<()> {
     let lines = read_lines("3_binary_diagnostic/data/input.txt")?;
 
-    let power_consumption = calculate_power_consumption(&lines);
-
-    println!("Part 1: {power_consumption}");
+    match calculate_power_consumption(&lines) {
+        Ok(power_consumption) => {
+            println!("Part 1: {power_consumption}");
+        }
+        Err(diag_error) => {
+            panic!("{diag_error}");
+        }
+    }
 
     Ok(())
 }
